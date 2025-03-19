@@ -7,6 +7,25 @@ a{
     text-decoration: none;
     color: black;
 }
+#Nav-Bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: papayawhip;
+    position: fixed;
+    width: 100%;
+}
+
+#Nav-Bar a{
+    padding: 1rem 1rem;
+    font-size: 20px;
+    font-family: "Moderustic", serif;
+}
+
+#Nav-Bar a:hover{
+    background-color: wheat;
+    border-radius: 10px;
+}
 
 #first-section{
     background-image: url(./background2.png);
@@ -17,7 +36,7 @@ a{
 }
 
 .font-style{
-    font-family: "Playwrite IS", cursive;
+    font-family: "Moderustic", serif;
     
 }
 #container{
@@ -47,7 +66,7 @@ a{
 
 
 .profile-img{
-    height: 300px;
+    height: 200px;
     float: right;
     margin-right: 150px;
     margin-left: 100px;
@@ -72,13 +91,13 @@ a{
 }
 
 .project-img{
-    height: 200px;
+    height: 150px;
     float: left;
     
 }
 
 .project-img-2{
-    height: 188px;
+    height: 130px;
     float: left;  
      
 }
@@ -136,6 +155,22 @@ a{
     font-size: 18px;
 }
 
+/* Contact Page Styles */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.social-card {
+    text-align: center;
+    padding: 20px;
+    background-color: papayawhip;
+    border-radius: 10px;
+    width: 150px;
+}
+
 @media(max-width: 900px){
     .container{
         font-size: 25px;
@@ -179,5 +214,4 @@ a{
     .writing-3{
         margin-right: 40px;
     }
-
 }
