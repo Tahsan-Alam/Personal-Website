@@ -1,114 +1,142 @@
 <!DOCTYPE html>
+<!-- Homepage: introduces Tahsan and previews two featured research applications. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tahsan's Website</title>
+    <meta name="description" content="Tahsan Ul Alam is a Computer Science and Engineering student at the University of Iowa building research software, cloud platforms, and machine learning tools.">
+    <meta name="theme-color" content="#ffefd5">
+    <title>Tahsan Ul Alam | Research &amp; Software</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <!-- Original website font, loaded with a readable fallback while it downloads. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    
-    <section id = "Nav-Bar">
-        <nav>
-            <div class = "container">
-                <ul>
-                    <a href = "index.html"> Home </a> 
-                    <a href = "projects.html"> Projects </a>
-                    <a href = "contact.html"> Contact </a>
-                </ul>
-            </div>
+
+    <!-- Shared navigation marks the current page for visual and screen-reader users. -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <nav class="site-nav page-width" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Tahsan Ul Alam home">
+                <span class="brand-mark" aria-hidden="true">TA</span>
+                <span class="brand-name">Tahsan Ul Alam</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-    </section>
-    <section id = "first-section">
-        <div id = "container" class = "font-style">
-            <p class = "animation"> <span style = "font-weight: 900;"> Hello! </span> 
-            </br>
-            I'm Tahsan
-        </br>
-        Welcome to my website
-            <p>
-        </div>
-    </section>
+    </header>
 
-    <section id = "second-section">
-        <img class = "profile-img"  src = "./Tahsan2.jpg" alt = "Tahsan's image">
-        <div class = "font-style writing">
-        <h1 class = "heading-1"> About Me</h1>
-        <p> I am an undergraduate student at The University of Iowa, 
-            majoring in Computer Science and Engineering. In my free time, 
-            I love playing video games and reading storybooks. 
-        </p>
-        </div>
-    </section>
+    <main id="main-content">
+        <!-- A compact introduction keeps the featured projects near the top. -->
+        <!-- Original mountain artwork sits behind the compact introduction. -->
+        <div class="intro-backdrop">
+        <section class="hero page-width" aria-labelledby="intro-title">
+            <div class="hero-copy">
+                <h1 id="intro-title">Tahsan Ul Alam</h1>
+                <p class="hero-description">
+                    I’m an undergraduate student and research assistant working at the intersection of
+                    software engineering, machine learning, and biomedical research.
+                    I build tools that help turn experimental data into useful insights.
+                </p>
+            </div>
 
-    <section id = "third-section" class = "font-style">
-        <h1 class = "heading-1"> Projects </h1>
-        <img class ="project-img" src = "./word.jpg" alt = "word square objects">
-      
-        <div class = "writing-2">
-            <h2>Word Ladder</h2>
-            <p> Word ladder is a game where the user is prompted with a source word and a target word, 
-                and they have to provide a sequence of words that form a ladder from the source word 
-                to the target word.​ 
-            </br>
-            <button class = "font-style" id = "Github-button">
-                 <a href = "https://github.com/Tahsan-Alam/Word-Ladder" 
-                 target="_blank" style = "text-decoration: none; color: black;">
-                     Github Repository </a>
-                    </button>
-            </p>
-   
-        </div>
-        <img class = "project-img-2" src ="./facility.jpg">
-        <div class = "writing-2">
-            <h2> Facility Location Problem</h2>
-            <p>The goal is of this project is to determine the fewest number of facilities 
-                needed so that every city is within a specified radius r of a facility.
-            </br>
-            <button class = "font-style" id = "Github-button">
-                 <a href = " https://github.com/Tahsan-Alam/Facility-Location-Problem " 
-                 target="_blank" style = "text-decoration: none; color: black;">
-                     Github Repository </a>
-                    </button> 
-            </p>
-        </div>
-      
-    </section>
+            <figure class="portrait">
+                <img src="assets/tahsan-portrait.jpeg" width="600" height="600" alt="Portrait of Tahsan Ul Alam" fetchpriority="high">
+            </figure>
+        </section>
 
-    <section id = "third-section" class = "font-style"> 
-        <h1 class = "heading-1"> Get in touch with me </h1>
-        <p class = "writing-3">I’d love to hear from you! Whether you have a question, 
-            a project idea, or just want to say hello, feel free to reach out.
-      
-        </p>
-        <button class = "font-style" id = "contact-button">
-            <a href = "mailto: taalam@uiowa.edu">
-            Contact me </a>
-        </button>
-    </section>
+        </div>
 
-<section id = "footer">
-    <footer>
-        <div class = "container-2">
-            <p> 
-                <a href = "https://www.linkedin.com/in/tahsan-ul-alam-647764290/" target= "_blank">   
-                LinkedIn </a>
-            </p>
-            <p> 
-                <a href = "https://github.com/Tahsan-Alam" target ="_blank"> Github </a> 
-            </p>
-            <p>
-                <a href = "mailto: taalam@uiowa.edu" target="_blank">  
-                Email </a>
-            </p>
-        </div> 
-        <p class = "last"> </br> © Tahsan Ul Alam</p>
+        <section class="section-space page-width" aria-labelledby="featured-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="featured-title">Tools built for research.</h2>
+                </div>
+                <a class="text-link" href="projects.html">View All Projects <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <!-- The image link works even when JavaScript is unavailable. -->
+                    <a class="image-trigger card-image dark-surface" href="assets/neuron-segmentation.webp" data-image-title="Neuron Segmentation Platform" aria-label="Enlarge Neuron Segmentation Platform screenshot">
+                        <img src="assets/neuron-segmentation.webp" width="1885" height="982" alt="Neuron Segmentation interface with model selection and image upload controls" loading="lazy">
+                        <span class="image-hint" aria-hidden="true">Enlarge ↗</span>
+                    </a>
+
+                    <div class="card-body">
+                        <p class="project-category">01 / Cloud &amp; biomedical imaging</p>
+                        <h3><a href="projects.html#segmentation">Neuron Segmentation Platform</a></h3>
+                        <p>
+                            An AWS-backed platform for automated cell segmentation.
+                            I built the cloud infrastructure and integrated existing models
+                            to support image uploads, queued processing, and result retrieval.
+                        </p>
+                        <ul class="tags" aria-label="Technologies"><li>AWS</li><li>PyTorch</li><li>TensorFlow</li></ul>
+                        <a class="text-link" href="projects.html#segmentation">Explore Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="image-trigger card-image" href="assets/labstats.webp" data-image-title="LabStats — Research Data Analysis" aria-label="Enlarge LabStats screenshot">
+                        <img src="assets/labstats.webp" width="1878" height="972" alt="LabStats application displaying an experimental data worksheet and analysis navigation" loading="lazy">
+                        <span class="image-hint" aria-hidden="true">Enlarge ↗</span>
+                    </a>
+
+                    <div class="card-body">
+                        <p class="project-category">02 / Scientific software</p>
+                        <h3><a href="projects.html#labstats">LabStats</a></h3>
+                        <p>
+                            A locally hosted application for experimental data analysis.
+                            I developed tools for statistical testing, interactive visualization,
+                            and reproducible R-script and figure exports.
+                        </p>
+                        <ul class="tags" aria-label="Technologies"><li>R</li><li>Shiny</li><li>Statistical analysis</li></ul>
+                        <a class="text-link" href="projects.html#labstats">Explore Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- A direct contact invitation replaces the oversized closing section. -->
+        <section class="contact-banner page-width" aria-labelledby="connect-title">
+            <div>
+                <p class="eyebrow">Let’s connect</p>
+                <h2 id="connect-title">Have a project or research idea?</h2>
+                <p>I’d love to hear about it.</p>
+            </div>
+            <a class="button button-primary" href="contact.html">Get in Touch <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <!-- Footer links use the existing verified email and social profile addresses. -->
+    <div class="footer-backdrop">
+    <footer class="site-footer page-width">
+        <p>© <span data-current-year>2026</span> Tahsan Ul Alam</p>
+        <div class="footer-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/tahsan-ul-alam-647764290/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/Tahsan-Alam" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="mailto:taalam@uiowa.edu">Email ↗</a>
+        </div>
     </footer>
-</section>
+    </div>
 
+    <!-- Native dialog contains keyboard focus and supports Escape to close. -->
+    <dialog class="image-dialog" id="image-viewer" aria-labelledby="viewer-title">
+        <div class="viewer-toolbar">
+            <h2 id="viewer-title"></h2>
+            <button class="viewer-close" type="button" aria-label="Close enlarged image">Close <span aria-hidden="true">×</span></button>
+        </div>
+        <img class="viewer-image" alt="">
+        <a class="text-link viewer-original" target="_blank" rel="noopener noreferrer">Open full-size image <span aria-hidden="true">↗</span></a>
+    </dialog>
 </body>
 </html>

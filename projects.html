@@ -1,192 +1,206 @@
 <!DOCTYPE html>
+<!-- Projects page: three research case studies with supplied images and accurate contributions. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tahsan's Projects</title>
+    <meta name="description" content="Explore Tahsan Ul Alam’s neuron segmentation platform, LabStats application, and agricultural image classification research.">
+    <meta name="theme-color" content="#ffefd5">
+    <title>Projects | Tahsan Ul Alam</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <!-- Original website font, loaded with a readable fallback while it downloads. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <section id="Nav-Bar">
-        <nav>
-            <div class="container">
-                <ul>
-                    <a href="index.html"> Home </a> 
-                    <a href="projects.html"> Projects </a>
-                    <a href="contact.html"> Contact </a>
-                </ul>
-            </div>
+
+    <!-- Shared navigation marks the current page for visual and screen-reader users. -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <nav class="site-nav page-width" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Tahsan Ul Alam home">
+                <span class="brand-mark" aria-hidden="true">TA</span>
+                <span class="brand-name">Tahsan Ul Alam</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-    </section>
+    </header>
 
-    <section id="first-section" style="height: 40vh; margin-bottom: 50px;">
-        <div id="container" class="font-style">
-            <p class="animation">
-                <span style="font-weight: 900;">My Projects</span>
-            </p>
-        </div>
-    </section>
+    <main id="main-content">
+        <!-- Original mountain artwork is reused for the project introduction. -->
+        <div class="intro-backdrop">
+        <section class="page-intro page-width" aria-labelledby="page-title">
+            <p class="eyebrow">Research &amp; engineering</p>
+            <h1 id="page-title">Selected projects</h1>
+            <p>Software for scientific workflows, from cloud-based imaging to statistical analysis and machine learning.</p>
 
-    <section id="projects-content" class="font-style" style="margin: 100px;">
+            <nav class="project-index" aria-label="Jump to project">
+                <a href="#segmentation">01 / Segmentation</a>
+                <a href="#labstats">02 / LabStats</a>
+                <a href="#kani-dare">03 / KANI DARE</a>
+            </nav>
+        </section>
 
-        <h1 class="heading-1">Hardware Projects</h1>
-        
-        <img class="project-img" src="./hardware2.jpg" sizes="100px" alt="Raspberry pi and arduino uno">
-        <div class="writing-2">
-            <h2>Face-Tracking Robot Eye (Ongoing, Collaborative Project)</h2>
-            <p>This project is a collaboration with a friend to build a robot “eye” that turns to follow people in real time. 
-                I am focusing on the software and hardware integration: using OpenCV on Raspberry Pi to detect faces (about 90% accuracy so far) 
-                and controlling a NEMA 17 stepper motor to rotate toward the subject. My teammate is leading the mechanical design and 3D-printed parts, while I continue refining the detection pipeline and motor control for smoother tracking.
-            </br>
-           
-            </p>
         </div>
 
-        <img class="project-img" src="./hardware1.jpg" alt="alarm clock">
-        <div class="writing-2">
-            <h2>Raspberry Pi Alarm Clock</h2>
-            <p>A digital alarm clock built on a Raspberry Pi Pico with a DS3231 RTC module and LCD. 
-                Designed to mimic the simplicity of classic Casio watches, it allows setting time and alarms through push-buttons and alerts users with a buzzer. 
-                This project combined embedded C++ programming, hardware soldering, and real-world testing to ensure the clock worked reliably as a standalone device.
-            </br>
-          
-            </p>
-        </div>
+        <div class="page-width">
+        <!-- Each case study separates the problem from Tahsan’s own contribution. -->
+        <article class="case-study" id="segmentation" aria-labelledby="segmentation-title">
+            <div class="case-visual">
+                <div class="visual-label"><span>01</span><span>Glykys Lab · University of Iowa</span></div>
+                <a class="image-trigger case-image dark-surface" href="assets/neuron-segmentation.webp" data-image-title="Neuron Segmentation Platform" aria-label="Enlarge Neuron Segmentation Platform screenshot">
+                    <img src="assets/neuron-segmentation.webp" width="1885" height="982" alt="Neuron Segmentation application showing ANMAF model selection and image uploads">
+                    <span class="image-hint" aria-hidden="true">Enlarge ↗</span>
+                </a>
+                <p class="image-caption">A web interface for uploading images and running segmentation models.</p>
+                <div class="workflow" aria-label="Platform workflow">
+                    <span>Upload images</span><span aria-hidden="true">→</span><span>Run inference</span><span aria-hidden="true">→</span><span>Retrieve results</span>
+                </div>
+            </div>
 
-        <h1 class="heading-1">Java Projects</h1>
-        
-        <img class="project-img" src="./java1.jpg" alt="connect 4">
-        <div class="writing-2">
-            <h2>Java-Based Connect 4 Game(Hackathon Submission)</h2>
-            <p>I developed a networked multiplayer Connect 4 game in Java featuring a multithreaded server 
-                and a Swing-based GUI. The game supports multiple players with real-time state synchronization 
-                and event-driven updates, ensuring smooth and responsive gameplay.
-                This project was submitted as part of a team hackathon, where our playable prototype earned 3rd place in a two-day competition.
-            </br>
-            </p>
-        </div>
-        
-        <h1 class="heading-1">Python Projects</h1>
-        
-        <img class="project-img" src="./word.jpg" alt="word square objects">
-        <div class="writing-2">
-            <h2>Word Ladder</h2>
-            <p>Word ladder is a game where the user is prompted with a source word and a target word, 
-                and they have to provide a sequence of words that form a ladder from the source word 
-                to the target word.
-            </br>
-            <button class="font-style" id="Github-button">
-                <a href="https://github.com/Tahsan-Alam/Word-Ladder" 
-                target="_blank" style="text-decoration: none; color: black;">
-                    Github Repository</a>
-            </button>
-            </p>
-        </div>
+            <div class="case-copy">
+                <p class="project-category">Cloud infrastructure / Biomedical imaging</p>
+                <h2 id="segmentation-title">Neuron Segmentation<br>Platform</h2>
+                <p class="case-summary">Bringing automated cell segmentation into a web-based research workflow.</p>
 
-        <img class="project-img-2" src="./facility.jpg" alt="facility location map">
-        <div class="writing-2">
-            <h2>Facility Location Problem</h2>
-            <p>The goal is of this project is to determine the fewest number of facilities 
-                needed so that every city is within a specified radius r of a facility.
-            </br>
-            <button class="font-style" id="Github-button">
-                <a href="https://github.com/Tahsan-Alam/Facility-Location-Problem" 
-                target="_blank" style="text-decoration: none; color: black;">
-                    Github Repository</a>
-            </button> 
-            </p>
-        </div>
+                <h3>The problem</h3>
+                <p>Researchers need a way to submit microscopy images, run segmentation models, and retrieve analysis outputs through a consistent workflow.</p>
 
-        <h1 class="heading-1" style="clear: both; padding-top: 50px;">C++ Projects</h1>
-        
-        <img class="project-img" src="./Bejeweled.jpg" alt="Bejeweled game">
-        <div class="writing-2">
-            <h2>Bejeweled</h2>
-            <p>A classic match-three puzzle game implemented in C++. The player swaps adjacent gems to form matching rows or columns of three or more identical gems.
-            </br>
-            <button class="font-style" id="Github-button">
-                <a href="https://github.com/Tahsan-Alam/Bejeweled" target="_blank" style="text-decoration: none; color: black;">
-                    Github Repository</a>
-            </button>
-            </p>
-        </div>
+                <h3>My contribution</h3>
+                <p>I built and deployed the AWS infrastructure and integrated existing SWIN (PyTorch) and ANMAF (TensorFlow) models for automated inference. I configured storage, authentication, job management, and model execution.</p>
 
-        <img class="project-img-2" src="./SpaceWar.jpg" alt="Space War game">
-        <div class="writing-2">
-            <h2>Space War</h2>
-            <p>A 2D space shooter game built in C++ where the player controls a spaceship and battles against enemy ships while avoiding obstacles and collecting power-ups.
-            </br>
-            <button class="font-style" id="Github-button">
-                <a href="https://github.com/Tahsan-Alam/SpaceWar" target="_blank" style="text-decoration: none; color: black;">
-                    Github Repository</a>
-            </button> 
-            </p>
-        </div>
+                <h3>What it supports</h3>
+                <p>Image uploads, queued segmentation jobs, user-visible processing status, and retrieval of completed analysis outputs.</p>
 
-        <h1 class="heading-1" style="clear: both; padding-top: 50px;">Web Development Projects</h1>
-        
-        <img class="project-img-2" src="./Tic-Tac-Toe.jpg" alt="Web games">
-        <div class="writing-2">
-            <h2>Tic-Tac-Toe</h2>
-            <p>A Tic-Tac-Toe web game, built using modern web technologies and responsive design principles.
-            </br>
-            <button class="font-style" id="Github-button">
-                <a href="https://github.com/Tahsan-Alam/Tic-Tac-Toe" target="_blank" style="text-decoration: none; color: black;">
-                    Github Repository</a>
-            </button> 
-            </p>
-        </div>
+                <ul class="tags" aria-label="Technologies">
+                    <li>S3</li><li>API Gateway</li><li>Lambda</li><li>Cognito</li><li>DynamoDB</li><li>SageMaker</li><li>PyTorch</li><li>TensorFlow</li>
+                </ul>
 
-        <img class="project-img-2" src="./Simon.jpg" alt="Web games">
-        <div class="writing-2">
-            <h2>Simon-Color-Clash</h2>
-            <p>A Simon-Color-Clash web game, built using modern web technologies and responsive design principles.
-            </br>
-            <button class="font-style" id="Github-button">
-                <a href="https://github.com/Tahsan-Alam/Simon-Color-Clash" target="_blank" style="text-decoration: none; color: black;">
-                    Github Repository</a>
-            </button> 
-            </p>
-        </div>
+                <!-- Separate the frontend source from the existing model repositories. -->
+                <div class="project-links">
+                    <a class="button button-primary" href="https://github.com/Glykys-Lab/NeuronSegmentationfrontend" target="_blank" rel="noopener noreferrer">Frontend Repository <span aria-hidden="true">↗</span> </a>
+                    <a class="text-link" href="https://github.com/Glykys-Lab/ANMAF" target="_blank" rel="noopener noreferrer">ANMAF Repository <span aria-hidden="true">↗</span> </a>
+                    <a class="text-link" href="https://github.com/Glykys-Lab/SWIN" target="_blank" rel="noopener noreferrer">SWIN Repository <span aria-hidden="true">↗</span></a>
+                    <!-- Live platform URL remains unspecified. -->
+                </div>
+            </div>
+        </article>
 
+        <article class="case-study case-study-reverse" id="labstats" aria-labelledby="labstats-title">
+            <div class="case-visual">
+                <div class="visual-label"><span>02</span><span>Glykys Lab · University of Iowa</span></div>
+                <a class="image-trigger case-image" href="assets/labstats.webp" data-image-title="LabStats — Research Data Analysis" aria-label="Enlarge LabStats screenshot">
+                    <img src="assets/labstats.webp" width="1878" height="972" alt="LabStats data table with import, analysis, graph, and R-code export navigation" loading="lazy">
+                    <span class="image-hint" aria-hidden="true">Enlarge ↗</span>
+                </a>
+                <p class="image-caption">A unified workspace for experimental data and statistical analysis.</p>
+                <div class="workflow" aria-label="LabStats workflow">
+                    <span>Import data</span><span aria-hidden="true">→</span><span>Analyze &amp; visualize</span><span aria-hidden="true">→</span><span>Export</span>
+                </div>
+            </div>
 
+            <div class="case-copy">
+                <p class="project-category">Scientific software / Data analysis</p>
+                <h2 id="labstats-title">LabStats</h2>
+                <p class="case-summary">From experimental spreadsheets to reproducible analysis.</p>
 
-        <h1 class="heading-1" style="clear: both; padding-top: 50px;">Unity Game Development</h1>
-        
-        <img class="project-img" src="./BrickSmasher.jpg" alt="Brick Smasher game">
-        <div class="writing-2">
-            <h2>Brick Smasher</h2>
-            <p>A classic arcade-style brick breaking game developed in Unity. The player controls a paddle to bounce a ball that breaks bricks at the top of the screen.
-            </br>
-            <button class="font-style" id="Github-button">
-                <a href="https://github.com/Tahsan-Alam/Brick-Smasher" target="_blank" style="text-decoration: none; color: black;">
-                    Github Repository</a>
-            </button>
-            </p>
-        </div>
-    </section>
-
-    <section id="footer">
-        <footer>
-            <div class="container-2">
-                <p> 
-                    <a href="https://www.linkedin.com/in/tahsan-ul-alam-647764290/" target="_blank">   
-                    LinkedIn</a>
-                </p>
-                <p> 
-                    <a href="https://github.com/Tahsan-Alam" target="_blank">Github</a> 
-                </p>
+                <h3>The problem</h3>
                 <p>
-                    <a href="mailto:taalam@uiowa.edu" target="_blank">  
-                    Email</a>
+                    GraphPad Prism’s licensing costs motivated us to develop a free alternative in R.
+                    Our goal was to let researchers inspect and share the code behind their analyses
+                    and graphs, making the methods more transparent, easier to review, and reproducible.
                 </p>
-            </div> 
-            <p class="last"></br>© Tahsan Ul Alam</p>
-        </footer>
-    </section>
+
+                <h3>My contribution</h3>
+                <p>I developed a locally hosted R Shiny application with CSV/Excel import, interactive visualization, multiple comparisons, and reproducible analysis exports.</p>
+
+                <h3>What it supports</h3>
+                <p>T-tests, ANOVA, mixed-effects modeling, and nested analyses, with R-script and publication-quality figure exports.</p>
+
+                <ul class="tags" aria-label="Technologies"><li>R</li><li>Shiny</li><li>Statistical modeling</li><li>Data visualization</li></ul>
+
+                <!-- Link to the supplied source code; no public demo URL has been supplied. -->
+                <div class="project-links">
+                    <a class="button button-primary" href="https://github.com/Glykys-Lab/Statistics-in-R" target="_blank" rel="noopener noreferrer">GitHub Repository <span aria-hidden="true">↗</span> </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="case-study" id="kani-dare" aria-labelledby="dare-title">
+            <div class="case-visual">
+                <div class="visual-label"><span>03</span><span>KANI DARE · Summer 2025</span></div>
+                <!-- The full PDF poster supplies an uncropped image preview. -->
+                <a class="image-trigger case-image poster-image" href="assets/dare-poster.webp" data-image-title="KANI DARE — Agricultural Image Classification Poster" aria-label="Enlarge the full KANI DARE research poster">
+                    <img src="assets/dare-poster.webp" width="1372" height="1800" alt="Complete research poster: Machine Learning Image Classification for Agriculture Intelligence" loading="lazy">
+                    <span class="image-hint" aria-hidden="true">Enlarge ↗</span>
+                </a>
+                <p class="image-caption">Research by Tahsan Ul Alam, Sam Akerman-Knopf, and Victoria Do.</p>
+            </div>
+
+            <div class="case-copy">
+                <p class="project-category">Machine learning / Agricultural research</p>
+                <h2 id="dare-title">Agricultural Image<br>Classification</h2>
+                <p class="case-summary">Exploring crop classification when training data is limited.</p>
+
+                <h3>The problem</h3>
+                <p>Distinguishing crop types from images with small datasets introduces challenges in model performance, data quality, and generalization.</p>
+
+                <h3>My contribution</h3>
+                <p>I co-developed binary and multiclass CNN classifiers using pretrained VGG16 and Xception models. Our work explored augmentation, fine-tuning, mislabeled data, and DCGAN-based synthetic image generation.</p>
+
+                <div class="result-callout">
+                    <strong>74.19<span>%</span></strong>
+                    <p>Best reported multiclass test accuracy<br>with Xception, augmentation, and fine-tuning.</p>
+                </div>
+
+                <ul class="tags" aria-label="Technologies"><li>Python</li><li>CNNs</li><li>VGG16</li><li>Xception</li><li>DCGAN</li></ul>
+
+                <div class="project-links">
+                    <a class="button button-primary" href="https://raw.githubusercontent.com/Tahsan-Alam/Machine-Learning-Image-Classification-for-Agriculture-Intelligence/main/DARE-Poster.pdf" target="_blank" rel="noopener noreferrer">View Research Poster <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="https://github.com/Tahsan-Alam/Machine-Learning-Image-Classification-for-Agriculture-Intelligence" target="_blank" rel="noopener noreferrer">GitHub Repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- <section class="contact-banner" aria-labelledby="project-contact-title">
+            <div>
+                <p class="eyebrow">Continue the conversation</p>
+                <h2 id="project-contact-title">Let’s build something useful.</h2>
+                <p>Get in touch about software, research, or collaboration.</p>
+            </div>
+            <a class="button button-primary" href="contact.html">Contact Me <span aria-hidden="true">↗</span></a>
+        </section> -->
+        </div>
+    </main>
+
+    <!-- Footer links use the existing verified email and social profile addresses. -->
+    <div class="footer-backdrop">
+    <footer class="site-footer page-width">
+        <p>© <span data-current-year>2026</span> Tahsan Ul Alam</p>
+        <div class="footer-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/tahsan-ul-alam-647764290/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/Tahsan-Alam" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="mailto:taalam@uiowa.edu">Email ↗</a>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Native dialog contains keyboard focus and supports Escape to close. -->
+    <dialog class="image-dialog" id="image-viewer" aria-labelledby="viewer-title">
+        <div class="viewer-toolbar">
+            <h2 id="viewer-title"></h2>
+            <button class="viewer-close" type="button" aria-label="Close enlarged image">Close <span aria-hidden="true">×</span></button>
+        </div>
+        <img class="viewer-image" alt="">
+        <a class="text-link viewer-original" target="_blank" rel="noopener noreferrer">Open full-size image <span aria-hidden="true">↗</span></a>
+    </dialog>
 </body>
 </html>
