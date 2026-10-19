@@ -14,8 +14,7 @@ Personal-Website/
 ├── style.css               # Shared typography, colors, layouts, and responsive rules
 ├── script.js               # Image viewer, focus restoration, and footer year updates
 ├── assets/                 # Images and icon used by the current website
-│   └── legacy/             # Preserved original images and the previous portrait
-├── INFORMATION_NEEDED.md   # Missing project links and optional content
+│   └── legacy/             # Preserved original images and the  content
 └── README.md               # This guide
 ```
 
